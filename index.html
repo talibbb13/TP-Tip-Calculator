@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="calculator">
+
+    <div class="opening">
+      <h1>Calculate the Tip now !</h1><br>
+      <p></p>
+    </div>
+    <br><br><br>
+    <div class="action">
+
+      <div class="inputs">
+        <label for="amount">Amount</label>
+        <button>💲</button><input type="number" id="amount" placeholder="---Enter the Food Amount here">
+
+        <br><br><br>
+        <label for="guest">Guest</label>
+        <button>🚹</button><input type="number" id="guest" placeholder="---Enter the Number of Guest">
+        <br><br><br>
+        <label for="service-quality">Service Quality</label>
+        <select id="service-quality">
+          <option disabled selected value="0">–––Choose–––</option>
+          <option value="1">100% -Excellent</option>
+          <option value="0.75">75% -Good</option>
+          <option value="0.5">50% -It's Ok !</option>
+          <option value="0.25">25% -Bad</option>
+          <option value="0">0% -Terrible</option>
+        </select><br>
+        <br>
+        <br>
+      </div>
+
+      <div class="calculate-me">
+        <button onclick="calculation()">Calculate Now !</button>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="tip-amount">
+    <h3 id="finalTipAmount"></h3>
+    <h3 id="errorThrow"></h3>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
+

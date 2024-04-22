@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.calculator {
+  width: 80vw;
+  background-color: ghostwhite;
+  padding: 40px 20px;
+  border-radius: 15px;
+}
+
+.opening h1 {
+  font-size: 45px;
+  text-align: center;
+  font-family: monospace;
+}
+
+.opening p {
+  border-bottom: 1px solid rgba(176, 176, 176, 0.7)
+}
+
+.inputs label {
+  display: block;
+  margin: 0 0 7px 5px;
+  font-size: 25px;
+}
+
+.inputs input,
+.inputs select {
+  padding: 7px 14px;
+  outline: none;
+  font-size: 30px;
+  border: 2px solid rgba(176, 176, 176, 0.5);
+  border-radius: 0 10px 10px 0;
+  background-color: rgba(236, 236, 236, 1);
+  width: 93%;
+}
+
+.inputs input:hover,
+.inputs select:hover {
+  box-shadow: 0 0 5px 3px skyblue;
+}
+
+.inputs button {
+  margin-right: -5px;
+  height: 49.1px;
+  width: 7%;
+  font-size: 30px;
+  outline: none;
+  border: 2px solid rgba(176, 176, 176, 0.5);
+  border-radius: 10px 0 0 10px;
+  background-color: rgba(236, 236, 236, 1);
+}
+
+.inputs button:hover {
+  background-color: lightgrey;
+}
+
+.inputs select {
+  width: 100%;
+}
+
+.calculate-me button {
+  width: 100%;
+  padding: 15px 30px;
+  font-size: 25px;
+  font-family: fantasy;
+  border-radius: 10px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+}
+
+.calculate-me button:hover {
+  background-color: rgba(236, 236, 236, 1);
+  box-shadow: 7px 7px 5px rgba(161, 161, 161, 0.5);
+  color: black;
+  border: 1px solid rgba(106, 106, 106, 0.5);
+}
+
+.tip-amount {
+  position: absolute;
+  bottom: 20vh;
+
+}
+
+#finalTipAmount {
+  padding: 18px 36px;
+  font-size: 35px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  visibility: hidden;
+}
+
+#errorThrow {
+  padding: 18px 36px;
+  font-size: 35px;
+  background-color: #FF4C4C;
+  color: white;
+  border-radius: 10px;
+  visibility: hidden;
+}
+
+.animation {
+  animation-name: fading;
+  animation-delay: 0s;
+  animation-duration: 1s;
+}
+
+@keyframes fading {
+  0% {
+        bottom: 0 !important;
+      }
+      
+      50% {
+        bottom: 10vh !important;
+      }
+      
+      100% {
+        bottom: 20vh !important;
+      }
+    }
